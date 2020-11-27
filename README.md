@@ -17,7 +17,8 @@ Facial keypoints (also called facial landmarks) are the small magenta dots shown
        The images are subjected into preprocessing steps like, Cropping, rescalling, normalizing and converting them to tensor format.
        
     **Results**
-   ![Image 1](https://github.com/Varun1407/FaceKeyPointDetection_Project1/blob/master/images/image_1.png)
+    
+   ![Trained output](https://github.com/Varun1407/FaceKeyPointDetection_Project1/blob/master/images/Image_1.png)
    
 2. **Define the Network Architecture.ipynb :** 
     Defines the CNN network archiecture. 
@@ -30,7 +31,24 @@ Facial keypoints (also called facial landmarks) are the small magenta dots shown
     
     **Results**
     
-    ![Image 2](https://github.com/Varun1407/FaceKeyPointDetection_Project1/blob/master/images/image2.png)
-    ![Image 3](https://github.com/Varun1407/FaceKeyPointDetection_Project1/blob/master/images/image3.png)
-    ![Image 4](https://github.com/Varun1407/FaceKeyPointDetection_Project1/blob/master/images/image4.png)
+    ![Test_image1](https://github.com/Varun1407/FaceKeyPointDetection_Project1/blob/master/images/image2.png)
+    ![Test_image2](https://github.com/Varun1407/FaceKeyPointDetection_Project1/blob/master/images/image3.png)
+    ![Test_image3](https://github.com/Varun1407/FaceKeyPointDetection_Project1/blob/master/images/image4.png)
     
+ 
+ 3. **Facial Keypoint Detection, Complete Pipeline.ipynb :**
+   This notebook provides test and analysis of the trained model:
+      1. Detect all the faces in an image using a face detector (we'll be using a Haar Cascade detector in this notebook).
+      2. Pre-process those face images so that they are grayscale, and transformed to a Tensor of the input size that your net expects. This step will be similar to the data_transform you created and applied in Notebook 2, whose job was tp rescale, normalize, and turn any iimage into a Tensor to be accepted as input to your CNN.
+      3. Use your trained model to detect facial keypoints on the image.
+      
+    **Results**
+    
+    ![Unprocessed New Image](https://github.com/Varun1407/FaceKeyPointDetection_Project1/blob/master/images/unprocessedimage.png)
+    ![Processed and tested Image](https://github.com/Varun1407/FaceKeyPointDetection_Project1/blob/master/images/processedandtested.png)
+      
+ 4. **Fun with Keypoints.ipynb :**
+    This notebook gives an oppurtunity to play around with some funny masks on faces.
+    
+    **Results**
+     ![Funny_Images](https://github.com/Varun1407/FaceKeyPointDetection_Project1/blob/master/images/image5.png)
