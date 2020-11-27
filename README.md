@@ -46,7 +46,7 @@ Facial keypoints (also called facial landmarks) are the small magenta dots shown
     
     ![Unprocessed New Image](https://github.com/Varun1407/FaceKeyPointDetection_Project1/blob/master/images/unprocessedimage.png)
     
-    ![Processed and tested Image](https://github.com/Varun1407/FaceKeyPointDetection_Project1/blob/master/images/processedandtested.png)
+    ![Processed and tested Image](https://github.com/Varun1407/FaceKeyPointDetection_Project1/blob/master/images/Processedandtested.png)
       
  4. **Fun with Keypoints.ipynb :**
     This notebook gives an oppurtunity to play around with some funny masks on faces.
