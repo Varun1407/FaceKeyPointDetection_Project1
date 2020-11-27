@@ -5,20 +5,21 @@ This project is about defining and training a CNN model to perfrom a Face keypoi
 Facial keypoints (also called facial landmarks) are the small magenta dots shown on each of the faces in the image above. In each training and test image, there is a single face and 68 keypoints, with coordinates (x, y), for that face. These keypoints mark important areas of the face: the eyes, corners of the mouth, the nose, etc. These keypoints are relevant for a variety of tasks, such as face filters, emotion recognition, pose recognition, and so on. Here they are, numbered, and you can see that specific ranges of points match different portions of the face.
 
 ## Contents in the repository:
-1. **Load and Visualize Data.ipynb :  
-   provides steps to load and vizualize the dataset. The project uses Youtube Faces dataset (https://www.cs.tau.ac.il/~wolf/ytfaces/).
-  - **Training and Testing Data
+1. **Load and Visualize Data.ipynb :** 
+   provides steps to load and vizualize the dataset. The project uses [Youtube Faces dataset] (https://www.cs.tau.ac.il/~wolf/ytfaces/).
+  - **Training and Testing Data**
        This facial keypoints dataset consists of 5770 color images. All of these images are separated into either a training or a test set of data.
 
        3462 of these images are training images, for you to use as you create a model to predict keypoints.
        2308 are test images, which will be used to test the accuracy of your model.
        The information about the images and keypoints in this dataset are summarized in CSV files, which we can read in using pandas. Let's read the training CSV and get the annotations in an (N, 2) array where N is the number of keypoints and 2 is the dimension of the keypoint coordinates (x, y).
-  - **Transformation of the Images
+  - **Transformation of the Images**
        The images are subjected into preprocessing steps like, Cropping, rescalling, normalizing and converting them to tensor format.
-    **Results
+       
+    **Results**
    ![Image 1](https://github.com/Varun1407/FaceKeyPointDetection_Project1/blob/master/images/image_1.png)
    
-2. **Define the Network Architecture.ipynb : 
+2. **Define the Network Architecture.ipynb :** 
     Defines the CNN network archiecture. 
     This notebook and in models.py, you will:
     1. Define a CNN with images as input and keypoints as output.
@@ -27,7 +28,8 @@ Facial keypoints (also called facial landmarks) are the small magenta dots shown
   	4. See how the trained model performs on test data
     5. If necessary, modify the CNN structure and model hyperparameters
     
-    **Results
+    **Results**
+    
     ![Image 2](https://github.com/Varun1407/FaceKeyPointDetection_Project1/blob/master/images/image2.png)
     ![Image 3](https://github.com/Varun1407/FaceKeyPointDetection_Project1/blob/master/images/image3.png)
     ![Image 4](https://github.com/Varun1407/FaceKeyPointDetection_Project1/blob/master/images/image4.png)
